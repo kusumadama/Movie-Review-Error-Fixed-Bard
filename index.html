@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Review Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header>
+    <form action="#" class="search-form">
+      <label for="search">Search Movie Reviews:</label>
+      <input type="text" id="search" name="search" placeholder="Search Movie Reviews">
+      <button type="submit">Find Review</button>
+      <select name="search-by">
+        <option value="title">Title</option>
+        <option value="genre">Genre</option>
+        <option value="actor">Actor</option>
+        <option value="director">Director</option>
+        <option value="keywords">Keywords</option>
+      </select>
+    </form>
+  </header>
+
+  <section class="movie-details">
+    <h2>Movie Title</h2>
+    <img src="images/movie-poster.jpg" alt="Movie Poster">
+    <div class="movie-info">
+      <p>Genre: Action, Adventure</p>
+      <p>Rating: [Average user rating] out of 5 stars</p>
+      <p>Release Date: [Release Date]</p>
+    </div>
+
+    <div class="social-sharing">
+      <a href="#" class="social-button facebook">
+        <i class="fab fa-facebook-f"></i> Share on Facebook
+      </a>
+      <a href="#" class="social-button twitter">
+        <i class="fab fa-twitter"></i> Tweet about it
+      </a>
+    </div>
+
+    <h3>User Ratings & Comments</h3>
+    <div class="user-ratings">
+      <span class="star-rating">
+        <i class="fas fa-star" data-rating="1"></i>
+        <i class="fas fa-star" data-rating="2"></i>
+        <i class="fas fa-star" data-rating="3"></i>
+        <i class="fas fa-star" data-rating="4"></i>
+        <i class="fas fa-star" data-rating="5"></i>
+      </span>
+      <span class="average-rating">[Average rating text]</span>
+    </div>
+
+    <div class="user-comments">
+      <ul>
+        <li>
+          <p>Username: User 1</p>
+          <p>Comment content here...</p>
+          <p>Rating: 4 stars</p>
+        </li>
+      </ul>
+
+      <h3>Leave a Comment</h3>
+      <form action="#" id="comment-form">
+        <div class="form-group">
+          <label for="comment-name">Name:</label>
+          <input type="text" id="comment-name" name="comment-name" required>
+          <span class="error-message"></span>
+        </div>
+        <div class="form-group">
+          <label for="comment-text">Comment:</label>
+          <textarea id="comment-text" name="comment-text" rows="5" required></textarea>
+          <span class="error-message"></span>
+        </div>
+        <button type="submit">Submit Comment</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="movie-news">
+    <h2>Movie News & Extras</h2>
+    <div class="news-articles">
+      <article>
+        <h3>[News Article Title 1]</h3>
+        <p>[Short news article summary]</p>
+        <a href="https://www.writerswrite.com/journalism/
